@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int jmlbeli, bayar, potongan, jumlah[50], harga[50],total[50];
+    int jmlbeli, tabungan, jumlah[50], harga[50],total[50];
     float total_semua;
     string namabarang[50];
 
@@ -28,9 +28,9 @@ int main()
         total_semua += total[i]; 
 
     }
-    cout<<"Jumlah Bayar : Rp."<<total_semua<<endl;
-    cout<<"Bayar : Rp.";
-    cin>>bayar;
-    cout<<"Kembalian : Rp."<<(bayar-total_semua)<<endl;
+    cout<<"Jumlah Pembelian : Rp."<<total_semua<<endl;
+    cout<<"Tabungan : Rp.";
+    cin>>tabungan;
+    cout<<"Sisa Tabungan : Rp."<<(tabungan-total_semua)<<endl;
     return 0;
 }   
